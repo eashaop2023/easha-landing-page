@@ -63,7 +63,7 @@ const VisionMission = () => {
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
             }}
           />
-          <h5 className="mt-3" style={{ color: "#0f1111ff" }}>Ms. Nadimidoddi Salomi</h5>
+          <h5 className="mt-3" style={{ color: "#0f1111ff" }}>Ms.Nadimidoddi Salomi</h5>
           <h6 className="mt-1" style={{ color: "#0f1111ff" }}>Easha CEO</h6>
         </Col>
       </Row>
