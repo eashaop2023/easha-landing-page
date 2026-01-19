@@ -35,6 +35,7 @@ const steps = [
 
 const Works = () => {
   return (
+<<<<<<< HEAD
     <section className="w-full py-8 px-4">
 
       <h1 className="text-center font-bold text-3xl mb-12">
@@ -43,6 +44,14 @@ const Works = () => {
 
 
       <div className="container mx-auto flex flex-col md:flex-row md:items-center md:gap-12 mt-6">
+=======
+    <section className="w-full lg:py-12 px-4 mt-10">
+      <h1 className="text-center font-bold text-3xl mb-8">
+        <span className="text-[#013A63]">How </span> it works
+      </h1>
+
+      <div className="container mx-auto flex flex-col md:flex-row md:items-center md:gap-12">
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
         <div className="flex justify-center md:justify-start mb-8 md:mb-0">
           <img
             src={mobileImg}
@@ -51,21 +60,31 @@ const Works = () => {
           />
         </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
         <div className="flex flex-col gap-8 md:flex-1">
           {steps.map((step, idx) => (
             <div key={idx} className="flex gap-4 items-start">
               <div className="flex-shrink-0 flex items-center justify-center rounded-full bg-gray-100 p-3">
                 <img src={step.icon} alt={step.title} className="h-6 w-6" />
               </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-[#013A63] break-words">
                   {step.title}
                 </h3>
+<<<<<<< HEAD
                 <p className="text-gray-700 break-words">
                   {step.description}
                 </p>
+=======
+                <p className="text-gray-700 break-words">{step.description}</p>
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
               </div>
             </div>
           ))}
@@ -76,4 +95,7 @@ const Works = () => {
 };
 
 export default Works;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 858ff2f30513508742440b20f791896828877a84

@@ -56,7 +56,10 @@ function ChooseDoctor() {
 }
 
 export default ChooseDoctor;
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 858ff2f30513508742440b20f791896828877a84

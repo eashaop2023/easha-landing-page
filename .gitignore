@@ -24,7 +24,11 @@ build/
 .vscode/
 !.vscode/extensions.json
 .idea/
+<<<<<<< HEAD
 .DS_Store=========
+=======
+.DS_Store
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
 *.suo
 *.ntvs*
 *.njsproj

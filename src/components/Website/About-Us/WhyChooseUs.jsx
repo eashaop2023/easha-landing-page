@@ -2,6 +2,7 @@ import React from "react";
 import specialistDoctors from "../../../assets/specialist-doctors.png";
 
 const WhyChooseUs = () => (
+<<<<<<< HEAD
   <section className="container py-0 small-top-space">
     <style>
       {`
@@ -27,6 +28,41 @@ const WhyChooseUs = () => (
           .small-top-space {
             margin-top: 20px;
             margin-bottom: 20px;
+=======
+  <section className="container py-0 mobile-bottom-space">
+    <style>
+      {`
+        @media (max-width: 374.98px) {
+          .mobile-bottom-space {
+            margin-bottom: 180px;
+          }
+        }
+           @media (min-width: 374px) and (max-width: 424.98px) {
+          .mobile-bottom-space {
+          margin-top: 80px;
+            margin-bottom: 180px;
+          }
+        }
+           @media (min-width: 425px) and (max-width: 767.98px) {
+          .mobile-bottom-space {
+          margin-top: 140px;
+            margin-bottom: 180px;
+          }
+        }
+         @media (min-width: 768px) and (max-width: 1023.98px)  {
+          .mobile-bottom-space {
+            margin-top: -150px;
+          }
+        }
+          @media (min-width: 1024px) and (max-width: 1439.98px) {
+          .mobile-bottom-space {
+            margin-top: -310px;
+          }
+        }
+          @media (min-width: 1440px) and (max-width: 2559.98px) {
+          .mobile-bottom-space {
+            margin-top: 0px;
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
           }
         }
       `}
@@ -37,7 +73,11 @@ const WhyChooseUs = () => (
         <img
           src={specialistDoctors}
           alt="Specialist Doctors"
+<<<<<<< HEAD
           className="img-fluid rounded shadow-lg doctor-image"
+=======
+          className="img-fluid rounded shadow-lg mt-4"
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
         />
       </div>
 
@@ -97,6 +137,7 @@ const WhyChooseUs = () => (
         </ul>
       </div>
     </div>
+<<<<<<< HEAD
   </section>
 );
 
@@ -106,3 +147,48 @@ export default WhyChooseUs;
 
 
 
+=======
+    <style>
+  {`
+    @media (max-width: 374.98px) {
+      .mobile-bottom-space {
+        margin-bottom: 180px;
+      }
+    }
+    @media (min-width: 374px) and (max-width: 424.98px) {
+      .mobile-bottom-space {
+        margin-top: 80px;
+        margin-bottom: 180px;
+      }
+    }
+    @media (min-width: 425px) and (max-width: 767.98px) {
+      .mobile-bottom-space {
+        margin-top: 140px;
+        margin-bottom: 180px;
+      }
+    }
+    /* Tablets: set margin-top to 40px */
+    @media (min-width: 768px) and (max-width: 1023.98px) {
+      .mobile-bottom-space {
+        margin-top: 40px;
+      }
+    }
+    @media (min-width: 1024px) and (max-width: 1439.98px) {
+      .mobile-bottom-space {
+        margin-top: 0px;
+      }
+    }
+    @media (min-width: 1440px) and (max-width: 2559.98px) {
+      .mobile-bottom-space {
+        margin-top: 0px;
+      }
+    }
+  `}
+</style>
+
+  </section>
+  
+);
+
+export default WhyChooseUs;
+>>>>>>> 858ff2f30513508742440b20f791896828877a84

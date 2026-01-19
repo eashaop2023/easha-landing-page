@@ -4,12 +4,21 @@ import Minus from "../../../../assets/Remove_Minus.svg";
 
 const faqData = [
   {
+<<<<<<< HEAD
     question: "Do I really pay nothing?",
     answer: [
       "Accessing general health information and browsing our platform is completely free.",
       "However, booking appointments with verified healthcare professionals involves a transparent fee to ensure quality care and secure scheduling."
     ]
   },
+=======
+  question: "Do I really pay nothing?",
+  answer: [
+    "Accessing general health information and browsing our platform is completely free.",
+    "However, booking appointments with verified healthcare professionals involves a transparent fee to ensure quality care and secure scheduling."
+  ]
+},
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
   {
     question: "Is my data secure?",
     answer: [
@@ -20,9 +29,15 @@ const faqData = [
   },
   {
     question: "How do I reschedule?",
+<<<<<<< HEAD
     answer: ["You can easily reschedule your appointment from your dashboard.",
       "Just navigate to 'My Appointments' and select a new time slot that works for you."
     ],
+=======
+    answer: [ "You can easily reschedule your appointment from your dashboard.",
+      "Just navigate to 'My Appointments' and select a new time slot that works for you."
+],
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
   },
   {
     question: "How do I get a refund?",
@@ -39,7 +54,11 @@ const FAQAccordion = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="w-full bg-white px-6 sm:px-12 md:px-20 lg:px-32 xl:px-48 py-8 sm:py-10 -mt-6">
+=======
+    <div className="w-full bg-white px-6 sm:px-12 md:px-20 lg:px-32 xl:px-48 py-12 sm:py-16">
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
       <h2 className="text-center mb-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
         <span className="text-[#013A63]">Frequently </span>
         <span className="text-black font-normal">asked questions</span>
@@ -88,5 +107,8 @@ const FAQAccordion = () => {
 };
 
 export default FAQAccordion;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 858ff2f30513508742440b20f791896828877a84
