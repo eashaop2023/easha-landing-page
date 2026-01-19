@@ -1,0 +1,325 @@
+.nav-link {
+  display: inline-block;
+  color: #000;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #00A99D;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00A99D;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.login-signup-container {
+  border-radius: 1.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #00A99D;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.login-link, .signup-link {
+  color: #FFFFFF !important;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-divider {
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 0 0.5rem;
+  transition: color 0.2s ease;
+}
+
+@media (min-width: 1024px) {
+  .login-signup-container {
+    background-color: transparent;
+    border: 1px solid #ccc;
+  }
+
+  .login-link, .signup-link {
+    color: #000 !important;
+  }
+
+  .login-divider {
+    color: #6c757d;
+  }
+
+  .login-signup-container:hover {
+    background-color: #00A99D;
+    border-color: #00A99D;
+  }
+
+  .login-signup-container:hover .login-link,
+  .login-signup-container:hover .signup-link {
+    color: #FFFFFF !important;
+  }
+
+  .login-signup-container:hover .login-divider {
+    color: #FFFFFF;
+  }
+}
+
+body {
+  padding-top: 70px;
+}
+
+.nav-link {
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00A99D;
+}
+
+.active-nav {
+  color: #00A99D !important;
+}
+
+.active-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #00A99D;
+}
+/* Add these styles to your Navbar.css file */
+
+.login-signup-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adds space between Login / Signup */
+}
+
+/* Make your links look consistent */
+.login-link, .signup-link {
+  text-decoration: none;
+}
+
+.login-divider {
+  color: #6c757d; /* A neutral gray color */
+}
+
+/* Custom styles for the signup dropdown */
+.signup-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.signup-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #0d6efd; /* Bootstrap's default link color, change if needed */
+  text-decoration: none;
+  font-size: inherit; /* Use the same font size as other links */
+}
+
+.signup-button:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu-custom {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.5rem; /* Space between button and menu */
+  background-color: white;
+  min-width: 120px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;
+  z-index: 1000;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.dropdown-item-custom {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item-custom:hover {
+  background-color: #f8f9fa;
+  color: #1e2125;
+}
+
+.signup-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: #007bff;
+  padding-left: 8px;
+}
+
+.signup-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  min-width: 180px;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.signup-option {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.signup-option:hover {
+  background-color: #f1f1f1;
+}
+
+.signup-dropdown:hover .signup-options {
+  display: flex;
+}
+.signup-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.signup-link {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #0056b3;
+}
+
+/* Dropdown content */
+.signup-options {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 100;
+  top: 100%;
+  right: 0;
+}
+
+.signup-option {
+  display: block;
+  color: #333;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-option:hover {
+  background-color: #f5f5f5;
+  color: #007bff;
+}
+
+/* Show dropdown on hover */
+.signup-dropdown:hover .signup-options {
+  display: block;
+}
+
+
+
+
+/* Signup Dropdown Menu */
+.signup-options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  width: 200px; /* Default width */
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.signup-dropdown:hover .signup-options {
+  display: flex;
+}
+
+.signup-option {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.signup-option:hover {
+  background-color: #f5f5f5;
+}
+
+
+@media (max-width: 992px) {
+  .signup-options {
+    width: 120px;
+  }
+
+  .signup-option {
+    font-size: 13px;
+    padding: 8px 8px;
+  }
+}
+
+/* Responsive Fix: Reduce width for smaller devices */
+@media (max-width: 576px) {
+  .signup-options {
+    width: 100px; /* Smaller width on phones */
+  }
+
+  .signup-option {
+    font-size: 13px;
+    padding: 8px 5px;
+  }
+}
+
