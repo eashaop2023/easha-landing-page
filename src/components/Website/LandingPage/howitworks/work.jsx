@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserPlus, FaSignInAlt } from "react-icons/fa";
+import { FiUserPlus, FiLogIn } from "react-icons/fi";
 import mobileImg from "../../../../assets/mobile.png";
 import searchIcon from "../../../../assets/search.svg";
 import slotIcon from "../../../../assets/slot.svg";
@@ -9,13 +9,13 @@ import './work.css';
 
 const steps = [
   {
-    icon: FaUserPlus,
+    icon: FiUserPlus,
     title: "Register/Signup",
     description:
       "Create your account by providing basic information to get started with our healthcare services.",
   },
   {
-    icon: FaSignInAlt,
+    icon: FiLogIn,
     title: "Login",
     description:
       "Login to your account to access personalized healthcare services and manage your appointments.",
@@ -81,15 +81,19 @@ const Works = () => {
                   </svg>
                 </div>
               )}
-              <div className="flex gap-2 items-center justify-center w-full">
+              <div className="flex flex-col items-center justify-center w-full">
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold text-[#013A63] break-words inline-flex items-center gap-2 justify-center">
+                  <h3 className="text-lg font-semibold text-[#013A63] break-words inline-flex items-center gap-2">
                     {step.title}
-                    {typeof step.icon === 'string' ? (
-                      <img src={step.icon} alt={step.title} className="h-6 w-6" style={{ filter: 'none' }} />
-                    ) : (
-                      <step.icon className="h-6 w-6 text-[#00917F]" />
-                    )}
+                    <span className="flex-shrink-0 flex items-center justify-center">
+                      {typeof step.icon === 'string' ? (
+                        <img src={step.icon} alt={step.title} className="w-8 h-8" />
+                      ) : (
+                        <div className="flex items-center justify-center rounded-full bg-[#00A99D] w-8 h-8">
+                          <step.icon style={{ width: '16px', height: '16px', color: '#fafafa' }} />
+                        </div>
+                      )}
+                    </span>
                   </h3>
                   <p className="text-gray-700 break-words">
                     {step.description}
