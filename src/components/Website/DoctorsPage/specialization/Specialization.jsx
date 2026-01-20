@@ -6,14 +6,14 @@ import Pediatrician from "../../../../assets/Pediatrician.png";
 
 const specializations = [
   {
-    title: "Gynacology",
-    desc: "Support for women's reproductive health, from routine care to specific treatments.",
-    img: Gynacalogy,
-  },
-  {
     title: "General Physician",
     desc: "Your go-to doctor for everyday health concerns, checkups, and basic treatments.",
     img: GeneralPhysician,
+  },
+  {
+    title: "Gynaecologist",
+    desc: "Support for women's reproductive health, from routine care to specific treatments.",
+    img: Gynacalogy,
   },
   {
     title: "Dermatologist",

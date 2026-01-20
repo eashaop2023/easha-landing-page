@@ -40,7 +40,7 @@ const MeetWithOurDoctor = () => {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100%; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background: white;
   }

@@ -32,9 +32,11 @@ function ClinicVisit() {
       </li>
     </ul>
 
-    <button className="mt-2 mb-5 lg:!w-50  lg:!mt-4 px-4 font-medium !text-[18px] py-2 bg-[#00917F] text-white !rounded-3xl">
-      Find a clinic
-    </button>
+    <a href="https://eashaop.com/" style={{ textDecoration: 'none' }}>
+      <button className="mt-2 mb-5 lg:!w-50  lg:!mt-4 px-4 font-medium !text-[18px] py-2 bg-[#00917F] text-white !rounded-3xl">
+        Find a clinic
+      </button>
+    </a>
   </div>
 
   <div className="w-full !mb-7 md:!mb-0">

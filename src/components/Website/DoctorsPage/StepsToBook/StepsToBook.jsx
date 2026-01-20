@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Avatar } from "@mui/material";
+import { FaUserMd } from "react-icons/fa";
 import SearchIcon from "../../../../assets/search.svg";
-import Done from "../../../../assets/done.svg";
 import CalendarTodayIcon from "../../../../assets/Daterange.svg";
 
 const steps = [
@@ -12,7 +12,7 @@ const steps = [
       "Explore verified professionals across various specialties to find the one that fits your needs.",
   },
   {
-    icon: Done,
+    icon: FaUserMd,
     title: "Check Doctor Profile",
     description:
       "Check experience, patient reviews, consultation modes, and availability in one place.",
@@ -77,15 +77,25 @@ const EasySteps = () => {
                 mb: 2,
               }}
             >
-              <img
-                src={step.icon}
-                alt={step.title}
-                style={{
-                  width: 28,
-                  height: 28,
-                  objectFit: "contain",
-                }}
-              />
+              {typeof step.icon === 'string' ? (
+                <img
+                  src={step.icon}
+                  alt={step.title}
+                  style={{
+                    width: 28,
+                    height: 28,
+                    objectFit: "contain",
+                  }}
+                />
+              ) : (
+                <step.icon
+                  style={{
+                    width: 28,
+                    height: 28,
+                    color: "#00A99D",
+                  }}
+                />
+              )}
             </Avatar>
             <Typography
               fontWeight={500}

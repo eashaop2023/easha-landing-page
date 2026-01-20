@@ -14,35 +14,35 @@ const TestimonialsCarousel = () => {
   const testimonials = [
     {
       id: 1,
-      name: "S. Ramesh",
+      name: "Ramesh Kumar",
       text:
         "This website is a lifesaver! It helped me identify my symptoms quickly and connected me to a specialist in no time. Highly recommend!",
       image: rameshImage,
     },
     {
       id: 2,
-      name: "Anita Rao",
+      name: "Anitha Rao",
       text:
         "I was worried about my health and didn't know which doctor to consult. This platform guided me perfectly and helped me book an appointment with the right specialist. Excellent service!",
       image: anitaImage,
     },
     {
       id: 3,
-      name: "Siva",
+      name: "Shiva Naidu",
       text:
         "I needed urgent medical advice late at night, and this platform helped me immediately. The consultation was fast and accurate.",
       image: sivaImage,
     },
     {
       id: 4,
-      name: "Sandeep",
+      name: "Sandeep Yadav",
       text:
         "This website made healthcare so much easier for me and my family. Everything was smooth and well organized.",
       image: rameshImage,
     },
     {
       id: 5,
-      name: "Vamshi",
+      name: "Vamshi Krishna",
       text:
         "A best platform for online doctor consultations. It saved me time and helped me get proper medical guidance.",
       image: vamshiImage,
@@ -56,14 +56,14 @@ const TestimonialsCarousel = () => {
     },
     {
       id: 7,
-      name: "Vikash",
+      name: "Vikas Reddy",
       text:
         "I had a great experience using this website. It helped me reach the right doctor at the right time.",
       image: vikashImage,
     },
     {
       id: 8,
-      name: "Iyer",
+      name: "Manoj Kumar",
       text:
         "An excellent healthcare platform. It saved me so much time and effort.",
       image: iyerImage,

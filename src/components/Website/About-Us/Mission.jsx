@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Eashafounder from "../../../assets/easha-founder.jpg";
-import Eashaceo from "../../../assets/ceo.jpg";
+import Eashafounder from "../../../assets/Founder.jpg";
+import Eashaceo from "../../../assets/ceo-new2.png";
 
 const VisionMission = () => {
   return (
@@ -28,46 +28,49 @@ const VisionMission = () => {
       </Row>
 
       {/* Founder Images */}
-      <Row className="justify-content-center text-center mb-5">
+      <Row className="justify-content-center text-center mb-5" style={{ marginTop: "0" }}>
         
         {/* Founder 1 */}
         <Col xs={12} md={5} className="mb-4 mb-md-0 d-flex flex-column align-items-center">
-          
           <img
             src={Eashafounder}
             alt="Easha Founder"
             style={{
               width: "250px",
-              height: "240px",
+              height: "250px",
               borderRadius: "50%",
               border: "6px solid #00A99D",
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
               objectFit: "cover",
               objectPosition: "center 20%",
+              display: "block",
             }}
           />
-          
           <h5 className="mt-3">Mr. Nayakanti Pruthvi Raj</h5>
-          <h6>Easha Founder</h6>
+          <h6>eAsha Founder</h6>
         </Col>
 
         {/* Founder 2 */}
-        <Col xs={12} md={5} className="d-flex flex-column align-items-center">
+        <Col xs={12} md={5} className="d-flex flex-column align-items-center" style={{ marginTop: "0", paddingTop: "0" }}>
           <img
             src={Eashaceo}
             alt="Easha CEO"
             style={{
               width: "250px",
-              height: "240px",
+              height: "250px",
               borderRadius: "50%",
               border: "6px solid #00A99D",
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
               objectFit: "cover",
-              objectPosition: "center 18%", 
+              // Slightly bias upwards so the head isn't cropped too tight
+              objectPosition: "center 15%",
+              display: "block",
+              marginTop: "0",
+              paddingTop: "0",
             }}
           />
           <h5 className="mt-3">Ms. Nadimidoddi Salomi</h5>
-          <h6>Easha CEO</h6>
+          <h6>eAsha CEO</h6>
         </Col>
 
       </Row>

@@ -51,9 +51,11 @@ const ServicesSection = () => {
     <span>Instant booking with reminders</span>
   </li>
 </ul>
-          <button className="mt-2 px-3 py-2 lg:!w-50 text-[18px] font-medium bg-[#00917F]  text-white !rounded-3xl ">
-            Book online now
-          </button>
+          <a href="https://eashaop.com/" style={{ textDecoration: 'none' }}>
+            <button className="mt-2 px-3 py-2 lg:!w-50 text-[18px] font-medium bg-[#00917F]  text-white !rounded-3xl ">
+              Book online now
+            </button>
+          </a>
         </div>
       </div>
     </section>

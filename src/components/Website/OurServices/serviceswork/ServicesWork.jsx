@@ -1,8 +1,8 @@
 import React from "react";
+import { FaUserMd } from "react-icons/fa";
 import mobileImg from "../../assets/mobile.png";
 import searchIcon from "../../assets/searchicon.svg";
 import date from '../../assets/date.svg';
-import done from '../../assets/done.svg';
 import './ServicesWork.css';
 
 const steps = [
@@ -13,7 +13,7 @@ const steps = [
       "Explore verified professionals across various specialties to find the one that fits your needs.",
   },
   {
-    icon: done,
+    icon: FaUserMd,
     title: "Check Doctor Profile",
     description:
       "Check experience, patient reviews, consultation modes, and availability in one place.",
@@ -48,7 +48,11 @@ const ServicesWork = () => {
           {steps.map((step, idx) => (
             <div key={idx} className="flex gap-4 items-start">
               <div className=" circle flex-shrink-0  flex items-center justify-cente rounded-full">
-                <img src={step.icon} alt={step.title}  />
+                {typeof step.icon === 'string' ? (
+                  <img src={step.icon} alt={step.title}  />
+                ) : (
+                  <step.icon style={{ width: '24px', height: '24px', color: '#00A99D' }} />
+                )}
               </div>
               <div className="step-box">
                 <h3 className=" step-title text-lg font-semibold text-![#252525]">{step.title}</h3>

@@ -1,8 +1,6 @@
 import doctorImage from "../../../../assets/doctorimage.png";
 import doctorImageMobile from "../../../../assets/doctorimageMobiles.png";
 
-import { Link } from "react-router-dom";
-
 import './HeroSection.css'
 
 const HeroSection = () => {
@@ -45,7 +43,7 @@ const HeroSection = () => {
                 >
                   Book a clinic visit or consult online with trusted, experienced doctors
                 </h5>
-                <Link to="/customerSupport" style={{ textDecoration: 'none' }}>
+                <a href="https://eashaop.com/" style={{ textDecoration: 'none' }}>
                 <button
                   className="btn btn-primary px-4 py-2 mb-3 mb-lg-0 align-self-start"
                   style={{
@@ -70,7 +68,7 @@ const HeroSection = () => {
                 >
                   Consult now
                 </button>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="col-lg-6 order-lg-2 order-2 p-0">
@@ -158,7 +156,7 @@ const HeroSection = () => {
                 >
                   Book a clinic visit or consult online with trusted, experienced doctors
                 </h5>
-                  <Link to="/">
+                  <a href="https://eashaop.com/" style={{ textDecoration: 'none' }}>
                 <button
                   className="btn btn-primary mobile-hero-btn"
                   style={{
@@ -183,7 +181,7 @@ const HeroSection = () => {
                 >
                   Consult now
                 </button>
-              </Link>
+              </a>
               </div>
             </div>
           </div>

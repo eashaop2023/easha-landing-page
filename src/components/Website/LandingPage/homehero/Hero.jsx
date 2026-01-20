@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../../../../assets/hero.jpg";
-import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -33,7 +32,7 @@ const HeroSection = () => {
             Your Health, Our Priority Always.
           </p>
 
-            <Link to="/customerSupport" style={{ textDecoration: 'none' }}>
+            <a href="https://eashaop.com/" style={{ textDecoration: 'none' }}>
           <button
   className="
     px-3 py-2 text-sm     /* Mobile size */
@@ -44,7 +43,7 @@ const HeroSection = () => {
 >
   Consult Now
 </button>
-</Link>
+</a>
         </div>
       </div>
     </section>

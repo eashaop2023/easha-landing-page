@@ -1,4 +1,5 @@
 import React from "react";
+import { FaUserPlus, FaSignInAlt } from "react-icons/fa";
 import mobileImg from "../../../../assets/mobile.png";
 import searchIcon from "../../../../assets/search.svg";
 import slotIcon from "../../../../assets/slot.svg";
@@ -7,6 +8,18 @@ import consultIcon from "../../../../assets/callwork.svg";
 import './work.css';
 
 const steps = [
+  {
+    icon: FaUserPlus,
+    title: "Register/Signup",
+    description:
+      "Create your account by providing basic information to get started with our healthcare services.",
+  },
+  {
+    icon: FaSignInAlt,
+    title: "Login",
+    description:
+      "Login to your account to access personalized healthcare services and manage your appointments.",
+  },
   {
     icon: searchIcon,
     title: "Search Doctor",
@@ -52,22 +65,38 @@ const Works = () => {
         </div>
 
 
-        <div className="flex flex-col gap-8 md:flex-1">
+        <div className="flex flex-col gap-2 md:flex-1 items-center">
           {steps.map((step, idx) => (
-            <div key={idx} className="flex gap-4 items-start">
-              <div className="flex-shrink-0 flex items-center justify-center rounded-full bg-gray-100 p-3">
-                <img src={step.icon} alt={step.title} className="h-6 w-6" />
+            <React.Fragment key={idx}>
+              {idx > 0 && (
+                <div className="flex justify-center items-center -mt-2 -mb-2 w-full -ml-8">
+                  <svg
+                    className="w-8 h-10 text-[#00917F]"
+                    fill="currentColor"
+                    viewBox="0 0 12 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect x="5" y="0" width="2" height="18" fill="currentColor" />
+                    <path d="M0 18l6 6 6-6H0z" fill="currentColor" />
+                  </svg>
+                </div>
+              )}
+              <div className="flex gap-2 items-center justify-center w-full">
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-[#013A63] break-words inline-flex items-center gap-2 justify-center">
+                    {step.title}
+                    {typeof step.icon === 'string' ? (
+                      <img src={step.icon} alt={step.title} className="h-6 w-6" style={{ filter: 'none' }} />
+                    ) : (
+                      <step.icon className="h-6 w-6 text-[#00917F]" />
+                    )}
+                  </h3>
+                  <p className="text-gray-700 break-words">
+                    {step.description}
+                  </p>
+                </div>
               </div>
-
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-[#013A63] break-words">
-                  {step.title}
-                </h3>
-                <p className="text-gray-700 break-words">
-                  {step.description}
-                </p>
-              </div>
-            </div>
+            </React.Fragment>
           ))}
         </div>
       </div>

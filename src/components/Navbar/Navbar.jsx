@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-
 const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
@@ -41,29 +39,31 @@ const Navbar = () => {
 
         {/* Login / Signup */}
         <div className="login-signup-container pe-4">
-          <NavLink to={API_BASE_URL} className="login-link">
+          <a href="https://eashaop.com/" className="login-link" style={{ textDecoration: 'none' }}>
             Login
-          </NavLink>
+          </a>
           <span className="login-divider">/</span>
 
           {/* Signup Dropdown */}
           <div className="signup-dropdown">
             <span className="signup-link">Sign Up ▾</span>
             <div className="signup-options">
-              <NavLink
-                to={`${API_BASE_URL}/signup`}
+              <a
+                href="https://eashaop.com/"
                 className="signup-option"
+                style={{ textDecoration: 'none' }}
               >
                 Sign Up as User
-              </NavLink>
+              </a>
 
-              {/* Doctor Signup - Local route */}
-              <NavLink
-                to={`${API_BASE_URL}/register`}
+              {/* Doctor Signup */}
+              <a
+                href="https://eashaop.com/"
                 className="signup-option"
+                style={{ textDecoration: 'none' }}
               >
                 Sign Up as Doctor
-              </NavLink>
+              </a>
             </div>
           </div>
         </div>
