@@ -1,6 +1,6 @@
 import React from "react";
 import mobileImg from "../../../../assets/app.jpg";
-import logo from "../../../../assets/app-logo.png";
+import logo from "../../../../assets/EASHAOP LOGO .png";
 import appStore from "../../../../assets/iphone.png";
 import playStore from "../../../../assets/play-store.png";
 import "./Download.css";
@@ -23,7 +23,7 @@ const DownloadSection = () => {
         {/* RIGHT CONTENT */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
 
-          <p className="text-2xl md:text-3xl font-semibold mb-6">
+          <p className="text-2xl md:text-3xl font-semibold" style={{ marginBottom: '0', marginTop: '0', paddingBottom: '0', lineHeight: '1.2' }}>
             App Launching Soon
           </p>
 
@@ -31,7 +31,8 @@ const DownloadSection = () => {
           <img
             src={logo}
             alt="eAsha Healthcare"
-            className="w-56 mb-10"
+            className="w-80 md:w-96"
+            style={{ marginBottom: '0', marginTop: '0', paddingBottom: '0', paddingTop: '0', display: 'block' }}
           />
 
           {/* STORE BUTTONS */}

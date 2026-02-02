@@ -12,7 +12,7 @@ const AboutUs = () => {
 
       <div className="w-full text-left px-6 sm:px-12 md:px-20 lg:px-[186px] py-10">
         <h3 className="text-xl sm:text-2xl md:text-[26px] lg:text-[28px] text-center font-bold font-urbanist mb-4 mt-4 lg:mt-0 !mt-10 lg:!mt-0">
-  About eAsha 24×7 Healthcare Pvt Ltd
+  About Kantan IT Pvt Ltd
 </h3>
 
         <p className="text-sm sm:text-base text-gray-700 font-urbanist leading-relaxed">
