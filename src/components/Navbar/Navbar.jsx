@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="d-flex align-items-center ps-0">
           <NavLink className="navbar-brand" to="/">
-            <img src={logo} alt="Logo" style={{ height: "60px" }} />
+            <img src={logo} alt="Logo" style={{ height: "90px",width:" 95px" }} />
           </NavLink>
         </div>
 

@@ -7,7 +7,7 @@ const ServicesSection = () => {
   return (
     <section className="w-full">
       <div className="text-center  ">
-        <h2 className="flex justify-center text-white h-15 !font-bold lg:h-40   !items-center  lg:!text-4xl" style={{backgroundColor:'#1F405E'}}>
+        <h2 className="font-bold font-urbanist flex justify-center text-white h-15 !font-bold lg:h-40   !items-center  lg:!text-4xl" style={{backgroundColor:'#1F4053'}}>
           Our services
         </h2>
         <div className='text-center w-full'>
