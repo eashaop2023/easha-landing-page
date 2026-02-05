@@ -1,9 +1,95 @@
-import React from "react";
+// import React from "react";
+// import { NavLink } from "react-router-dom";
+// import logo from "../../assets/Kantan.png";
+// import "./Navbar.css";
+
+// const Navbar = () => {
+
+//   const navLinks = [
+//     { name: "Home", path: "/" },
+//     { name: "Doctor", path: "/doctor" },
+//     { name: "Our Services", path: "/our-services" },
+//     { name: "About-Us", path: "/about-us" },
+//   ];
+
+//   return (
+//     <nav className="navbar navbar-expand-lg bg-white mb-2 fixed-top">
+//       <div className="container-xl d-flex justify-content-between align-items-center w-100">
+
+//         {/* Logo */}
+//         <div className="d-flex align-items-center ps-0">
+//           <NavLink className="navbar-brand" to="/">
+//             <img src={logo} alt="Logo" style={{ height: "90px",width:" 95px" }} />
+//           </NavLink>
+//         </div>
+
+//         {/* Middle Nav Links */}
+//         <div className="d-none d-lg-flex align-items-center gap-4 mx-auto">
+//           {navLinks.map((link) => (
+//             <NavLink
+//               key={link.name}
+//               to={link.path}
+//               className={({ isActive }) =>
+//                 `text-decoration-none nav-link ${isActive ? "active-nav" : ""}`
+//               }
+//             >
+//               {link.name}
+//             </NavLink>
+//           ))}
+//         </div>
+
+//         {/* Login / Signup */}
+//         <div className="login-signup-container pe-4">
+//           <a href="https://eashaop.com/" className="login-link" style={{ textDecoration: 'none' }}>
+//             Login
+//           </a>
+//           <span className="login-divider">/</span>
+
+//           {/* Signup Dropdown */}
+//           <div className="signup-dropdown">
+//             <span className="signup-link">Sign Up ▾</span>
+//             <div className="signup-options">
+//               <a
+//                 href="https://eashaop.com/"
+//                 className="signup-option"
+//                 style={{ textDecoration: 'none' }}
+//               >
+//                 Sign Up as User
+//               </a>
+
+//               {/* Doctor Signup */}
+//               <a
+//                 href="https://eashaop.com/"
+//                 className="signup-option"
+//                 style={{ textDecoration: 'none' }}
+//               >
+//                 Sign Up as Doctor
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+
+
+
+import React, { useState } from "react"; 
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/Kantan.png";
 import "./Navbar.css";
 
 const Navbar = () => {
+
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Doctor", path: "/doctor" },
@@ -15,19 +101,30 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-white mb-2 fixed-top">
       <div className="container-xl d-flex justify-content-between align-items-center w-100">
 
+        {/* 1. The Mobile Toggle Button (Hamburger) */}
+        <button 
+          className="navbar-toggler d-lg-none border-0" 
+          type="button" 
+          onClick={() => setSidebarOpen(!isSidebarOpen)}
+          style={{ order: -1 }} 
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
         {/* Logo */}
         <div className="d-flex align-items-center ps-0">
           <NavLink className="navbar-brand" to="/">
-            <img src={logo} alt="Logo" style={{ height: "90px",width:" 95px" }} />
+            <img src={logo} alt="Logo" style={{ height: "90px", width: "95px" }} />
           </NavLink>
         </div>
 
-        {/* Middle Nav Links */}
-        <div className="d-none d-lg-flex align-items-center gap-4 mx-auto">
+        {/* 2. Middle Nav Links */}
+        <div className={`nav-links-wrapper ${isSidebarOpen ? "sidebar-open" : ""} d-lg-flex align-items-center gap-4 mx-auto`}>
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
+              onClick={() => setSidebarOpen(false)}
               className={({ isActive }) =>
                 `text-decoration-none nav-link ${isActive ? "active-nav" : ""}`
               }
@@ -44,24 +141,13 @@ const Navbar = () => {
           </a>
           <span className="login-divider">/</span>
 
-          {/* Signup Dropdown */}
           <div className="signup-dropdown">
             <span className="signup-link">Sign Up ▾</span>
             <div className="signup-options">
-              <a
-                href="https://eashaop.com/"
-                className="signup-option"
-                style={{ textDecoration: 'none' }}
-              >
+              <a href="https://eashaop.com/" className="signup-option" style={{ textDecoration: 'none' }}>
                 Sign Up as User
               </a>
-
-              {/* Doctor Signup */}
-              <a
-                href="https://eashaop.com/"
-                className="signup-option"
-                style={{ textDecoration: 'none' }}
-              >
+              <a href="https://eashaop.com/" className="signup-option" style={{ textDecoration: 'none' }}>
                 Sign Up as Doctor
               </a>
             </div>
