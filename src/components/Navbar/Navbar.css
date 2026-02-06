@@ -311,10 +311,10 @@ body {
   }
 }
 
-/* Responsive Fix: Reduce width for smaller devices */
+
 @media (max-width: 576px) {
   .signup-options {
-    width: 100px; /* Smaller width on phones */
+    width: 100px;
   }
 
   .signup-option {
