@@ -50,57 +50,72 @@ const VisionMission = () => {
     
 
       {/* Founders Section */}
-     {/*} <Row className="justify-content-center text-center mb-5"> */}
-
-
-      <Row className="justify-content-center text-center my-5 gx-2">
-
-      
-        {/* Founder 1 */}
-        <Col xs={12} md={4} className="mb-4 mt-4 d-flex flex-column align-items-center">
-          <img
-            src={Eashafounder}
-            alt="Easha Founder"
+      <Row className="justify-content-center text-center my-5">
+        {/* Founder */}
+        <Col xs={12} sm={10} md={6} lg={5} xl={4} className="mb-4 mt-4 d-flex flex-column align-items-center">
+          <div
             style={{
               width: "220px",
               height: "220px",
               borderRadius: "50%",
               border: "6px solid #00A99D",
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-              objectFit: "cover",
-              objectPosition: "center 20%",
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
-          />
-          <h5 className="mt-3">Mr. Nayakanti Pruthvi Raj</h5>
-          <h6>Kantan IT Founder</h6>
+          >
+            <img
+              src={Eashafounder}
+              alt="Easha Founder"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+            />
+          </div>
+          <h5 className="mt-3 mb-1">Mr. Nayakanti Pruthvi Raj</h5>
+          <h6 className="mb-0">Kantan IT Founder</h6>
         </Col>
 
-        {/* Founder 2 */}
-        <Col xs={12} md={4} className="mb-4 mt-4 d-flex flex-column align-items-center">
-        
-
-          <img
-            src={Eashachairman}
-            alt="Easha CEO"
+        {/* Chairman */}
+        <Col xs={12} sm={10} md={6} lg={5} xl={4} className="mb-4 mt-4 d-flex flex-column align-items-center">
+          <div
             style={{
               width: "220px",
               height: "220px",
               borderRadius: "50%",
               border: "6px solid #00A99D",
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-              objectFit: "cover",
-              objectPosition: "center 15%",
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
-          />
-          <h5 className="mt-3">Mr. Nayakanti N Raju</h5>
-          <h6>Kantan IT Chairman </h6>
+          >
+            <img
+              src={Eashachairman}
+              alt="Easha Chairman"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center 20%",
+              }}
+            />
+          </div>
+          <h5 className="mt-3 mb-1">Mr. Nayakanti N Raju</h5>
+          <h6 className="mb-0">Kantan IT Chairman</h6>
         </Col>
 
-        {/* Founder 3 */}
-        <Col xs={12} md={4} className="mb-4 mt-4 d-flex flex-column align-items-center">
+        {/* CEO - Commented Out */}
+        {/* <Col xs={12} md={4} className="mb-4 mt-4 d-flex flex-column align-items-center">
           <img
             src={Eashaceoo}
-            alt="Easha Co-Founder"
+            alt="Easha CEO"
             style={{
               width: "220px",
               height: "220px",
@@ -113,7 +128,7 @@ const VisionMission = () => {
           />
           <h5 className="mt-3">Ms. Nadimidoddi Salomi</h5>
           <h6>Kantan IT CEO</h6>
-        </Col>
+        </Col> */}
       </Row>
 
 
