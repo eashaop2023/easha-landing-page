@@ -45,7 +45,7 @@ const FAQAccordion = () => {
         <span className="text-black font-normal">asked questions</span>
       </h2>
       <p className="text-center text-gray-500 mb-12 sm:mb-20 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
-        Everything you need to know about the Kantan IT Pvt Ltd
+        Everything you need to know about the eAsha 24x7 Healthcare Pvt.Ltd
       </p>
       <div className="space-y-6">
         {faqData.map((item, index) => (
