@@ -187,7 +187,7 @@ const Footer = () => {
         }}
       >
         <Typography variant="body2" color="text.secondary">
-          © Copyright 2025. All Rights Reserved by Kantan IT Pvt Ltd
+          © Copyright 2025. All Rights Reserved by eAsha 24x7 Healthcare Pvt.Ltd  
         </Typography>
 
         <Box sx={{ display: "flex", gap: 2, width: 200 }}>

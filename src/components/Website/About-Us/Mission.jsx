@@ -78,7 +78,7 @@ const VisionMission = () => {
             />
           </div>
           <h5 className="mt-3 mb-1">Mr. Nayakanti Pruthvi Raj</h5>
-          <h6 className="mb-0">Kantan IT Founder</h6>
+          <h6 className="mb-0">eAsha Founder</h6>
         </Col>
 
         {/* Chairman */}
@@ -108,7 +108,7 @@ const VisionMission = () => {
             />
           </div>
           <h5 className="mt-3 mb-1">Mr. Nayakanti N Raju</h5>
-          <h6 className="mb-0">Kantan IT Chairman</h6>
+          <h6 className="mb-0">eAsha Chairman</h6>
         </Col>
 
         {/* CEO - Commented Out */}
@@ -141,7 +141,7 @@ const VisionMission = () => {
       style={{
         backgroundColor: "#00A99D",
         borderRadius: "0 100px 100px 0",
-        height: "100px",               
+        height: "100px",              
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",    

@@ -45,7 +45,7 @@ const AboutUs = () => {
         {/* Content below the banner */}
         <div className="mt-10 px-6 md:px-10">
           <h3 className="text-[#8B0000] font-bold text-2xl mb-4">
-            About Kantan IT Pvt Ltd
+            About eAsha 24x7 Healthcare Pvt.Ltd
           </h3>
           <p className="text-gray-700 text-justify leading-relaxed">
             We're a digital-first OP care platform offering seamless doctor
