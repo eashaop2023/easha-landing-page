@@ -23,7 +23,7 @@ const DownloadSection = () => {
         {/* RIGHT CONTENT */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
 
-          <p className="text-2xl md:text-3xl font-semibold" style={{ marginBottom: '-5px', marginTop: '5px', paddingBottom: '0', lineHeight: '1.2' }}>
+          <p className="text-2xl md:text-3xl font-semibold" style={{ marginBottom: '-45px', marginTop: '5px', paddingBottom: '0', lineHeight: '1.2' }}>
             App Launching Soon
           </p>
 
@@ -36,7 +36,7 @@ const DownloadSection = () => {
           />
 
           {/* STORE BUTTONS */}
-          <div className="flex justify-center gap-6 mt-18 ">
+          <div className="flex justify-center gap-6 -mt-13 ">
             <img
               src={appStore}
               alt="App Store"
